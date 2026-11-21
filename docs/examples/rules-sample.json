@@ -1,0 +1,248 @@
+{
+  "note": "Two of Kaidoku's 341 grammar rules, shown to illustrate the rule format. The full rule set is private.",
+  "rules": [
+    {
+      "id": "wake-dewa-nai",
+      "pattern": "～わけではない",
+      "level": "N3",
+      "meaning": "it's not that ~ / it doesn't necessarily mean ~",
+      "explanation": "Denies a conclusion the listener might reasonably draw, without denying everything. 嫌いなわけではない means 'it's not that I dislike it', which leaves room for some other reason. The casual form is わけじゃない.",
+      "steps": [
+        {
+          "surface": [
+            "わけ",
+            "訳"
+          ],
+          "pos": "名詞",
+          "pos2": "非自立"
+        },
+        {
+          "anyOf": [
+            [
+              {
+                "surface": "で",
+                "baseForm": "だ"
+              },
+              {
+                "surface": "は",
+                "pos": "助詞"
+              }
+            ],
+            [
+              {
+                "surface": "じゃ"
+              }
+            ]
+          ]
+        },
+        {
+          "gap": 1
+        },
+        {
+          "anyOf": [
+            [
+              {
+                "baseForm": "ない"
+              }
+            ],
+            [
+              {
+                "baseForm": "ある"
+              },
+              {
+                "baseForm": "ます"
+              },
+              {
+                "surface": "ん"
+              }
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        "高いわけではない。",
+        "彼が悪いわけでは決してない。",
+        "嫌いなわけじゃ全然ないよ。",
+        "高い訳ではない。",
+        "高いわけではないです。",
+        "嫌いなわけじゃないよ。",
+        "行きたくないわけではありません。",
+        "彼が悪いわけじゃありません。",
+        "全部読んだわけではなかった。",
+        "好きなわけではありませんでした。",
+        "美味しくなかったわけじゃない。"
+      ],
+      "counterExamples": [
+        "そんなわけがない。",
+        "わけを教えてください。",
+        "だから遅れたわけです。"
+      ]
+    },
+    {
+      "id": "ba-hodo",
+      "pattern": "～ば～ほど",
+      "level": "N3",
+      "meaning": "the more ~, the more/less ~",
+      "explanation": "Repeats a predicate in its ば-conditional and plain forms before ほど: the more one condition develops, the more or less another does. な-adjectives use なら followed by the same adjective plus な, or であればあるほど. サ変 verbs can repeat the action noun or leave it out in the second half.",
+      "subsumes": [
+        "ba-conditional",
+        "nara",
+        "hodo-extent"
+      ],
+      "steps": [
+        {
+          "anyOf": [
+            [
+              {
+                "pos": "名詞",
+                "pos2": "形容動詞語幹"
+              },
+              {
+                "anyOf": [
+                  [
+                    {
+                      "surface": "なら"
+                    },
+                    {
+                      "pos2": "読点",
+                      "optional": true
+                    },
+                    {
+                      "sameAsFirst": true
+                    },
+                    {
+                      "surface": "な"
+                    }
+                  ],
+                  [
+                    {
+                      "surface": "で",
+                      "baseForm": "だ"
+                    },
+                    {
+                      "baseForm": "ある",
+                      "conjForm": "仮定形"
+                    },
+                    {
+                      "surface": "ば"
+                    },
+                    {
+                      "pos2": "読点",
+                      "optional": true
+                    },
+                    {
+                      "baseForm": "ある",
+                      "conjForm": "基本形"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "pos": [
+                  "動詞",
+                  "形容詞"
+                ],
+                "conjForm": "仮定形"
+              },
+              {
+                "surface": "ば"
+              },
+              {
+                "pos2": "読点",
+                "optional": true
+              },
+              {
+                "sameAsFirst": true,
+                "conjForm": [
+                  "基本形",
+                  "*"
+                ]
+              }
+            ],
+            [
+              {
+                "pos": [
+                  "動詞",
+                  "形容詞"
+                ]
+              },
+              {
+                "baseForm": "ない",
+                "conjForm": "仮定形"
+              },
+              {
+                "surface": "ば"
+              },
+              {
+                "pos2": "読点",
+                "optional": true
+              },
+              {
+                "sameAsFirst": true
+              },
+              {
+                "baseForm": "ない",
+                "conjForm": "基本形"
+              }
+            ],
+            [
+              {
+                "pos": "名詞",
+                "pos2": "サ変接続"
+              },
+              {
+                "baseForm": "する",
+                "conjForm": "仮定形"
+              },
+              {
+                "surface": "ば"
+              },
+              {
+                "pos2": "読点",
+                "optional": true
+              },
+              {
+                "sameAsFirst": true,
+                "optional": true
+              },
+              {
+                "baseForm": "する",
+                "conjForm": "基本形"
+              }
+            ]
+          ]
+        },
+        {
+          "surface": "ほど",
+          "pos": "助詞"
+        }
+      ],
+      "examples": [
+        "運動すればするほど体が軽くなる。",
+        "調べれば調べるほど謎が深まる。",
+        "安ければ安いほどいい。",
+        "早ければ早いほどいいです。",
+        "静かなら静かなほどいい。",
+        "静かであればあるほどいい。",
+        "録音室は静かなら静かなほど、小さな音まで拾える。",
+        "夜の森は静かであればあるほど、遠い波音がよく聞こえた。",
+        "手紙はかけばかくほど、自分の気持ちが整理できる。",
+        "朝ご飯を食べなければ食べないほど、昼前に集中できなくなる。",
+        "この曲は練習すれば、するほど、細かな違いが聞こえてくる。",
+        "作業場は静かなら、静かなほど、合図を聞き取りやすい。",
+        "練習すれば練習するほど上達する。"
+      ],
+      "counterExamples": [
+        "練習すれば上手になる。",
+        "山ほど宿題がある。",
+        "死ぬほど疲れた。",
+        "「高ければ安いほど」という説明は、比較の向きが逆だ。",
+        "「読めば書くほど」という記載は、誤植だった。",
+        "「静かなら便利なほど」という見出しを消した。",
+        "練習すれば勉強するほど上達する。"
+      ]
+    }
+  ]
+}

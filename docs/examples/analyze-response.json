@@ -1,0 +1,232 @@
+{
+  "tokens": [
+    {
+      "surface": "雨",
+      "baseForm": "雨",
+      "pos": "名詞",
+      "reading": "アメ",
+      "start": 0,
+      "end": 1
+    },
+    {
+      "surface": "が",
+      "baseForm": "が",
+      "pos": "助詞",
+      "reading": "ガ",
+      "start": 1,
+      "end": 2
+    },
+    {
+      "surface": "降っ",
+      "baseForm": "降る",
+      "pos": "動詞",
+      "reading": "フッ",
+      "start": 2,
+      "end": 4
+    },
+    {
+      "surface": "たら",
+      "baseForm": "た",
+      "pos": "助動詞",
+      "reading": "タラ",
+      "start": 4,
+      "end": 6
+    },
+    {
+      "surface": "、",
+      "baseForm": "、",
+      "pos": "記号",
+      "reading": "、",
+      "start": 6,
+      "end": 7
+    },
+    {
+      "surface": "試合",
+      "baseForm": "試合",
+      "pos": "名詞",
+      "reading": "シアイ",
+      "start": 7,
+      "end": 9
+    },
+    {
+      "surface": "は",
+      "baseForm": "は",
+      "pos": "助詞",
+      "reading": "ハ",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "surface": "中止",
+      "baseForm": "中止",
+      "pos": "名詞",
+      "reading": "チュウシ",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "surface": "に",
+      "baseForm": "に",
+      "pos": "助詞",
+      "reading": "ニ",
+      "start": 12,
+      "end": 13
+    },
+    {
+      "surface": "なる",
+      "baseForm": "なる",
+      "pos": "動詞",
+      "reading": "ナル",
+      "start": 13,
+      "end": 15
+    },
+    {
+      "surface": "かも",
+      "baseForm": "かも",
+      "pos": "助詞",
+      "reading": "カモ",
+      "start": 15,
+      "end": 17
+    },
+    {
+      "surface": "しれ",
+      "baseForm": "しれる",
+      "pos": "動詞",
+      "reading": "シレ",
+      "start": 17,
+      "end": 19
+    },
+    {
+      "surface": "ない",
+      "baseForm": "ない",
+      "pos": "助動詞",
+      "reading": "ナイ",
+      "start": 19,
+      "end": 21
+    },
+    {
+      "surface": "。",
+      "baseForm": "。",
+      "pos": "記号",
+      "reading": "。",
+      "start": 21,
+      "end": 22
+    },
+    {
+      "surface": "考えれ",
+      "baseForm": "考える",
+      "pos": "動詞",
+      "reading": "カンガエレ",
+      "start": 22,
+      "end": 25
+    },
+    {
+      "surface": "ば",
+      "baseForm": "ば",
+      "pos": "助詞",
+      "reading": "バ",
+      "start": 25,
+      "end": 26
+    },
+    {
+      "surface": "考える",
+      "baseForm": "考える",
+      "pos": "動詞",
+      "reading": "カンガエル",
+      "start": 26,
+      "end": 29
+    },
+    {
+      "surface": "ほど",
+      "baseForm": "ほど",
+      "pos": "助詞",
+      "reading": "ホド",
+      "start": 29,
+      "end": 31
+    },
+    {
+      "surface": "分から",
+      "baseForm": "分かる",
+      "pos": "動詞",
+      "reading": "ワカラ",
+      "start": 31,
+      "end": 34
+    },
+    {
+      "surface": "なく",
+      "baseForm": "ない",
+      "pos": "助動詞",
+      "reading": "ナク",
+      "start": 34,
+      "end": 36
+    },
+    {
+      "surface": "なる",
+      "baseForm": "なる",
+      "pos": "動詞",
+      "reading": "ナル",
+      "start": 36,
+      "end": 38
+    },
+    {
+      "surface": "。",
+      "baseForm": "。",
+      "pos": "記号",
+      "reading": "。",
+      "start": 38,
+      "end": 39
+    }
+  ],
+  "matches": [
+    {
+      "ruleId": "tara",
+      "pattern": "～たら",
+      "level": "N4",
+      "meaning": "if ~ / when ~ / after ~",
+      "explanation": "Built from the past form plus ら, たら sets up a condition or a moment after which something happens. It is the most versatile conditional in conversation. Suggestions with どう (行ったらどう?) are covered by ～たらどうですか.",
+      "start": 2,
+      "end": 6,
+      "text": "降ったら"
+    },
+    {
+      "ruleId": "naru-change",
+      "pattern": "～くなる / ～になる",
+      "level": "N4",
+      "meaning": "become ~ / get ~",
+      "explanation": "なる describes a change of state. い-adjectives use their く-form (寒くなる), negatives use なく (分からなくなる), and nouns and な-adjectives take に (医者になる, 上手になる).",
+      "start": 10,
+      "end": 15,
+      "text": "中止になる"
+    },
+    {
+      "ruleId": "kamoshirenai",
+      "pattern": "～かもしれない",
+      "level": "N4",
+      "meaning": "might ~ / maybe ~",
+      "explanation": "Marks something as possible but uncertain, weaker than でしょう. It attaches to plain forms of verbs and adjectives and directly to nouns. In casual speech it is often cut to just かも.",
+      "start": 15,
+      "end": 21,
+      "text": "かもしれない"
+    },
+    {
+      "ruleId": "ba-hodo",
+      "pattern": "～ば～ほど",
+      "level": "N3",
+      "meaning": "the more ~, the more/less ~",
+      "explanation": "Repeats a predicate in its ば-conditional and plain forms before ほど: the more one condition develops, the more or less another does. な-adjectives use なら followed by the same adjective plus な, or であればあるほど. サ変 verbs can repeat the action noun or leave it out in the second half.",
+      "start": 22,
+      "end": 31,
+      "text": "考えれば考えるほど"
+    },
+    {
+      "ruleId": "naru-change",
+      "pattern": "～くなる / ～になる",
+      "level": "N4",
+      "meaning": "become ~ / get ~",
+      "explanation": "なる describes a change of state. い-adjectives use their く-form (寒くなる), negatives use なく (分からなくなる), and nouns and な-adjectives take に (医者になる, 上手になる).",
+      "start": 34,
+      "end": 38,
+      "text": "なくなる"
+    }
+  ]
+}
