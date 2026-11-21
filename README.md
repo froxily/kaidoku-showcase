@@ -25,6 +25,14 @@ Kaidoku has three parts:
 
 *Kaidoku* (解読) is Japanese for "deciphering". The grammar engine is a **rule-based Java 21 / Spring Boot service, not an LLM**. Kuromoji splits the text into morphemes, and a small matching engine runs 341 hand-written JSON grammar rules over the token stream. The same input always gives the same output, it needs no external service, and every rule is backed by tests. The kanji and vocabulary modules are an installable web app that keeps your progress in your own browser and works offline after the first visit.
 
+![A 22-second tour of the live app: the grammar breakdown with explanations, then the kanji and vocabulary modules](docs/media/kaidoku-tour.gif)
+
+*A 22-second tour of the live app ([MP4](docs/media/kaidoku-tour.mp4)).*
+
+| Home | Grammar breakdown |
+| --- | --- |
+| ![Kaidoku home page with the grammar, kanji and vocabulary modules](docs/media/kaidoku-home.webp) | ![A Japanese paragraph with grammar patterns highlighted by JLPT level and an explanation panel](docs/media/kaidoku-grammar.webp) |
+
 ![Kaidoku highlighting 13 grammar patterns in a Japanese paragraph, with the explanation card for ～ば～ほど open](docs/screenshot.png)
 
 | | |
